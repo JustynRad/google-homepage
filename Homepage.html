@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<style>
+    #google-logo {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 200px;
+    }
+
+    #searchbar {
+        display: flex;
+        width: 25%;
+        border-radius: 25px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 25px;
+        height: 35px;
+        text-align: center;
+    }
+
+    .material-icons i{
+        position:absolute;
+    }
+
+    .input-field {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            border-radius: 35px;
+    }
+    
+    #search-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #search {
+        margin-right: 10px
+    }
+
+</style>
+
+<html>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <img id="google-logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    <div id="searchbar">
+        <i class="material-icons">search</i>
+        <input placeholder="Search Google or type a URL" type="text" id="input-field" name="userInput">
+        <i class="material-icons">mic</span>
+    </div>
+    <div id="search-buttons">
+        <input id="search" type="button" value="Google Search">
+        <input id="lucky" type="button" value="I'm Feeling Lucky">
+    </div>
+</html>
