@@ -1,0 +1,154 @@
+:focus {
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+
+header {
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+nav div {
+    display:flex;
+    width: 50%;
+    padding: 10px;
+    align-items: center;
+}
+
+#nav-left {
+    justify-content: start;
+}
+
+#nav-right {
+    justify-content: flex-end;
+    text-align: right;
+    right: 0;
+}
+
+nav div a {
+    padding: 5px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#apps {
+    margin: 0px 5px;
+}
+
+#account {
+    margin: 0px 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 220px;
+}
+
+#google-logo{
+    display: block;
+    margin: 0 auto;
+}
+
+.menu{
+    background-position: -131px -37px;
+    padding: 0;
+    height: 32px;
+    width: 32px;
+}
+.menu:hover{
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+#search-icon {
+    position: absolute;
+    filter: contrast(0);
+    background-position: -248px -35px;
+    margin: 29px 32px;
+}
+
+#mic-icon {
+    position: absolute;
+    filter: contrast(0);
+    margin: 29px -53px;
+}
+
+#input-field{
+    width: 50vw;
+    max-width: 500px;
+    height: 40px;
+    border: 1px solid #e1e1e1;
+    border-radius: 50px;
+    padding: 0 40px;
+    font-size: initial;
+    margin: 20px;
+}
+#input-field:hover, #search:active, #search:focus{
+    box-shadow: 0px 1.7px 5px #dfdfdf;;
+    outline: none;
+}
+#search-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+#search-buttons div{
+    margin: 5px;
+    padding: 10px;
+    color: #3b3b3b;
+    background-color: #eee;
+    border-color: #c0c0c0;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+#search-buttons div:hover{
+    border: 1px solid #c0c0c0;
+}
+#search-buttons a:hover{
+    text-decoration: none;
+}
+footer{
+    background-color: #eeeeee;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer-left {
+    justify-content: start;
+}
+
+#footer-right {
+    justify-content: flex-end;
+    text-align: right;
+    right: 0;
+}
